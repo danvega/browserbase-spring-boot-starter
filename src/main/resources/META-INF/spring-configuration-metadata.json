@@ -1,0 +1,27 @@
+{
+  "properties": [
+    {
+      "name": "browserbase.api-key",
+      "type": "java.lang.String",
+      "description": "Browserbase API key. Get one at https://www.browserbase.com/settings"
+    },
+    {
+      "name": "browserbase.base-url",
+      "type": "java.lang.String",
+      "description": "Base URL for the Browserbase API.",
+      "defaultValue": "https://api.browserbase.com"
+    },
+    {
+      "name": "browserbase.max-retries",
+      "type": "java.lang.Integer",
+      "description": "Maximum number of retries for failed requests (429, 500+).",
+      "defaultValue": 2
+    },
+    {
+      "name": "browserbase.timeout",
+      "type": "java.time.Duration",
+      "description": "HTTP request timeout.",
+      "defaultValue": "60s"
+    }
+  ]
+}

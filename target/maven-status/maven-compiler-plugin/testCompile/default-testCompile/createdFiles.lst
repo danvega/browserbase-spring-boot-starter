@@ -1,0 +1,8 @@
+dev/danvega/browserbase/TestApplication.class
+dev/danvega/browserbase/BrowserbaseAutoConfigurationTest.class
+dev/danvega/browserbase/ErrorHandlingTest.class
+dev/danvega/browserbase/ProjectsResourceTest.class
+dev/danvega/browserbase/FetchAPIResourceTest.class
+dev/danvega/browserbase/ContextsResourceTest.class
+dev/danvega/browserbase/SessionsResourceTest.class
+dev/danvega/browserbase/SearchResourceTest.class
