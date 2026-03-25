@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
+/**
+ * Live debugger and WebSocket URLs for an active browser session.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record SessionLiveUrls(
         String debuggerFullscreenUrl,

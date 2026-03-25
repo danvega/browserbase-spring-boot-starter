@@ -2,6 +2,9 @@ package dev.danvega.browserbase.resource.sessions;
 
 import dev.danvega.browserbase.http.BrowserbaseHttpClient;
 
+/**
+ * Resource for downloading files from a browser session.
+ */
 public class DownloadsResource {
 
     private final BrowserbaseHttpClient http;

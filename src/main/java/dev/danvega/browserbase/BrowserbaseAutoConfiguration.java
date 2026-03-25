@@ -10,6 +10,13 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestClient;
 
+/**
+ * Spring Boot auto-configuration for the Browserbase API client.
+ * <p>
+ * Activated when {@code browserbase.api-key} is present in the environment.
+ * Registers the {@link Browserbase} client and all resource beans so they
+ * can be injected directly into application code.
+ */
 @AutoConfiguration
 @ConditionalOnProperty(prefix = "browserbase", name = "api-key")
 @EnableConfigurationProperties(BrowserbaseProperties.class)
@@ -22,8 +29,6 @@ public class BrowserbaseAutoConfiguration {
             BrowserbaseProperties properties) {
         return new BrowserbaseHttpClient(restClientBuilder, properties);
     }
-
-    // Session sub-resources
 
     @Bean
     @ConditionalOnMissingBean
@@ -48,8 +53,6 @@ public class BrowserbaseAutoConfiguration {
     public UploadsResource uploadsResource(BrowserbaseHttpClient httpClient) {
         return new UploadsResource(httpClient);
     }
-
-    // Top-level resources
 
     @Bean
     @ConditionalOnMissingBean
@@ -90,8 +93,6 @@ public class BrowserbaseAutoConfiguration {
     public SearchResource searchResource(BrowserbaseHttpClient httpClient) {
         return new SearchResource(httpClient);
     }
-
-    // Main client
 
     @Bean
     @ConditionalOnMissingBean

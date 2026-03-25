@@ -2,6 +2,9 @@ package dev.danvega.browserbase.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * Parameters for fetching web page content via the Fetch API.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record FetchAPICreateParams(
         String url,

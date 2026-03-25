@@ -1,5 +1,8 @@
 package dev.danvega.browserbase.model;
 
+/**
+ * Optional filter parameters for listing sessions.
+ */
 public record SessionListParams(
         String status,
         String q

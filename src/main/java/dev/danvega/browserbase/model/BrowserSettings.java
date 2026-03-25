@@ -2,6 +2,9 @@ package dev.danvega.browserbase.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * Browser configuration for a session, including stealth, proxy, captcha, and viewport settings.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record BrowserSettings(
         Boolean advancedStealth,

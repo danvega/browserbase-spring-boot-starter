@@ -198,7 +198,6 @@ public class BrowserbaseHttpClient {
         if (version != null) {
             return "browserbase-spring-boot-starter/" + version;
         }
-        // Fallback: read from Maven's pom.properties baked into the JAR
         try (InputStream is = BrowserbaseHttpClient.class.getResourceAsStream(
                 "/META-INF/maven/dev.danvega/browserbase-spring-boot-starter/pom.properties")) {
             if (is != null) {

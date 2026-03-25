@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Map;
 
+/**
+ * Response returned when a browser session is created, including connection URLs.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record SessionCreateResponse(
         String id,

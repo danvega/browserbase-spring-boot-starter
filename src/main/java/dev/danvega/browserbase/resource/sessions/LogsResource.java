@@ -6,6 +6,9 @@ import org.springframework.core.ParameterizedTypeReference;
 
 import java.util.List;
 
+/**
+ * Resource for retrieving session logs.
+ */
 public class LogsResource {
 
     private static final ParameterizedTypeReference<List<SessionLog>> LOG_LIST_TYPE = new ParameterizedTypeReference<>() {};

@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.List;
 
+/**
+ * Response from a web search, containing a list of results.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record SearchWebResponse(
         String query,

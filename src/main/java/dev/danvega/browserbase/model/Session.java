@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Map;
 
+/**
+ * Represents a Browserbase browser session.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record Session(
         String id,

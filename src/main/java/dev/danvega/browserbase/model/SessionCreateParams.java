@@ -5,6 +5,9 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Parameters for creating a new browser session.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record SessionCreateParams(
         String projectId,

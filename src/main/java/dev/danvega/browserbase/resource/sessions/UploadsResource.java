@@ -5,6 +5,9 @@ import dev.danvega.browserbase.model.UploadCreateResponse;
 
 import java.nio.file.Path;
 
+/**
+ * Resource for uploading files to a browser session.
+ */
 public class UploadsResource {
 
     private final BrowserbaseHttpClient http;

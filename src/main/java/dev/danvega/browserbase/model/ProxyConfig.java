@@ -11,6 +11,12 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
         @JsonSubTypes.Type(value = ProxyConfig.ExternalProxy.class, name = "external"),
         @JsonSubTypes.Type(value = ProxyConfig.NoneProxy.class, name = "none")
 })
+/**
+ * Proxy configuration for a browser session.
+ * <p>
+ * Supports Browserbase-managed proxies, external proxies, and disabling proxies
+ * for specific domain patterns.
+ */
 public sealed interface ProxyConfig {
 
     @JsonIgnoreProperties(ignoreUnknown = true)

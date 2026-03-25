@@ -66,8 +66,15 @@ public class SessionsResource {
         return http.get("/v1/sessions/{id}/debug", SessionLiveUrls.class, id);
     }
 
+    /** Returns the sub-resource for downloading session files. */
     public DownloadsResource downloads() { return downloads; }
+
+    /** Returns the sub-resource for retrieving session logs. */
     public LogsResource logs() { return logs; }
+
+    /** Returns the sub-resource for retrieving session recordings. */
     public RecordingResource recording() { return recording; }
+
+    /** Returns the sub-resource for uploading files to a session. */
     public UploadsResource uploads() { return uploads; }
 }

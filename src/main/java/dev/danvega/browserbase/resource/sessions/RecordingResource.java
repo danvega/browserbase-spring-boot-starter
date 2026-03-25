@@ -6,6 +6,9 @@ import org.springframework.core.ParameterizedTypeReference;
 
 import java.util.List;
 
+/**
+ * Resource for retrieving session recordings.
+ */
 public class RecordingResource {
 
     private static final ParameterizedTypeReference<List<SessionRecording>> RECORDING_LIST_TYPE = new ParameterizedTypeReference<>() {};

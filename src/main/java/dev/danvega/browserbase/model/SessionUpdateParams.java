@@ -2,6 +2,9 @@ package dev.danvega.browserbase.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * Parameters for updating a browser session (e.g., requesting release).
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record SessionUpdateParams(
         String status,

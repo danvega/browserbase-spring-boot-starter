@@ -4,6 +4,9 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import java.util.Map;
 
+/**
+ * A log entry from a browser session, including request and response details.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record SessionLog(
         String method,

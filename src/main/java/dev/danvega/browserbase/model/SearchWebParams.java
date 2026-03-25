@@ -2,6 +2,9 @@ package dev.danvega.browserbase.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 
+/**
+ * Parameters for performing a web search.
+ */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record SearchWebParams(
         String query,
